@@ -1,5 +1,10 @@
 {
   "name": "time_to_answer",
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/PedroBonfim21/time_to_answer.git",
+  "author": "Pedro Bonfim <phenrique646@gmail.com>",
+  "license": "MIT"
 }
