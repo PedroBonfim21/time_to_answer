@@ -1,7 +1,9 @@
 {
   "name": "time_to_answer",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  },
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/PedroBonfim21/time_to_answer.git",
