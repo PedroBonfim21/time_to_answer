@@ -29,23 +29,18 @@
                             </div>
                             <div class="form-group">
                                 <%= form.label :password %>
-                                <%= form.text_field :password, class:"form-control",placeholder:"Senha do Adminstrador"%>
+                                <%= form.password_field :password, class:"form-control",placeholder:"Senha do Adminstrador"%>
                             </div>
                             <div class="form-group">
                                 <%= form.label :password_confirmation %>
-                                <%= form.text_field :password_confirmation, class:"form-control",placeholder:"Confirmar Senha"%>
+                                <%= form.password_field :password_confirmation, class:"form-control",placeholder:"Confirmar Senha"%>
                             </div>
                             <button type="submit" class="btn btn-default">Salvar
                             </button>
                         <% end %>
                     </div>
-                    <!-- /.col-lg-6 (nested) -->
                 </div>
-                <!-- /.row (nested) -->
             </div>
-            <!-- /.panel-body -->
         </div>
-        <!-- /.panel -->
     </div>
-    <!-- /.col-lg-12 -->
 </div>
