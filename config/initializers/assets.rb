@@ -13,7 +13,9 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # folder are already added.
 #app/assets
 Rails.application.config.assets.precompile += %w( admins_backoffice.js admins_backoffice.css
-                                                  users_backoffice.js users_backoffice.css)
+                                                  users_backoffice.js users_backoffice.css
+                                                  admins_devise.js admins_devise.css
+                                                )
 #libs/assets
 Rails.application.config.assets.precompile += %w( sb-admin-2.js sb-admin-2.css
                                                   gentelella_user.js gentelella_user.css)
