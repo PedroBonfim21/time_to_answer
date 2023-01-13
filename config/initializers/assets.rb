@@ -16,10 +16,13 @@ Rails.application.config.assets.precompile += %w( admins_backoffice.js admins_ba
                                                   users_backoffice.js users_backoffice.css
                                                   admins_devise.js admins_devise.css
                                                   user_devise.js user_devise.css
+                                                  site.js site.css
                                                 )
 #libs/assets
 Rails.application.config.assets.precompile += %w( sb-admin-2.js sb-admin-2.css
-                                                  gentelella_user.js gentelella_user.css)
+                                                  gentelella_user.js gentelella_user.css
+                                                  surface-fix.js surface-fix.css
+                                                  navbar.css)
 Rails.application.config.assets.precompile += %w( img.jpg )
 
 #vendor/assets
