@@ -2,7 +2,7 @@ class AdminsBackoffice::QuestionsController < AdminsBackofficeController
 before_action :set_question, only: [:edit, :update, :destroy]
 before_action :get_subjects, only: [:new, :edit]
   def index
-    @questions = Question.includes(:subject).order(:description).page(params[:page])
+    @questions = Question.includes(:subject).order(:id).page(params[:page])
   end
   
   def new
@@ -30,12 +30,13 @@ before_action :get_subjects, only: [:new, :edit]
   end
 
   def destroy
-    if @question.destroy
+    if @question.destroy #falta arrumar questoes com resposta
       redirect_to admins_backoffice_questions_path, notice: "Questão excluída com sucesso!"
     else
       render :index
     end
   end
+
   private
   
     def params_question

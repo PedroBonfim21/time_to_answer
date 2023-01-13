@@ -1,3 +1,10 @@
+<div class="jumbotron">
+  <% unless params[:term] %>
+    <h3>Últimas perguntas cadastradas...</h3>
+  <% else %>
+    <h3><%= "Resultados  para o termo \"#{params[:term]}\"..."%></h3>
+  <% end %>
+</div>
 <% @questions.each do |question| %>
   <%= form_with url: site_answer_path, local: true do |form|%>
     <div class="panel panel-default">
@@ -10,7 +17,7 @@
             <li style="list-style:none;" >
               <div class="radio">
                 <label>
-                  <%= radio_button_tag 'answer', answer.id %>
+                  <%= radio_button_tag 'answer_id', answer.id %>
                   <%= answer.description %>
                 </label>
               </div>
