@@ -17,7 +17,10 @@ class UsersBackoffice::ProfileController < UsersBackofficeController
       @user = User.find(current_user.id)
     end
     def params_user
-      params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation)
+      def params_user
+        params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation,
+        user_profile_attributes: [:id, :address, :gender, :birthdate])
+      end
     end
     def verify_password
       if params[:user][:password].blank? && params[:user][:password_confirmation].blank?
